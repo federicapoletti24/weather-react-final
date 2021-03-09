@@ -16,7 +16,7 @@ export default function Temperature() {
               <strong id="temperature">24</strong>
               <span class="units">
                 °
-                <a href="#" id="celsius-link" class="active link">
+                <a href="#" id="celsius-link" class="link">
                   C
                 </a>{" "}
                 | °

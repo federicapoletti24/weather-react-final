@@ -6,7 +6,6 @@ export default function Footer() {
     <small>
       <a
         href="https://github.com/federicapoletti24/weather_app_w6"
-        target="_blank"
         class="link"
       >
         Open-source code{" "}
