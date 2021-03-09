@@ -1,0 +1,19 @@
+.Header h1 {
+  font-size: 24px;
+  font-weight: 400px;
+  font-size: x-large;
+}
+
+.Header ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Header li:first-letter {
+  text-transform: capitalize;
+}
+.Header li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: lighter;
+}
