@@ -16,13 +16,13 @@ export default function Temperature() {
               <strong id="temperature">24</strong>
               <span class="units">
                 °
-                <a href="#" id="celsius-link" class="link">
+                <span href="#" id="celsius-link" class="active link">
                   C
-                </a>{" "}
+                </span>{" "}
                 | °
-                <a href="#" id="fahrenheit-link" class="link">
+                <span href="#" id="fahrenheit-link" class="link">
                   F
-                </a>
+                </span>
               </span>
             </div>
           </div>
