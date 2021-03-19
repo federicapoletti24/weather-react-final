@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Temperature.css";
 import { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 
 
 export default function Temperature(props) {
@@ -65,6 +66,7 @@ if (ready) {return (
       </div>
     </form>
    <WeatherInfo data={weather}/> 
+   <Forecast city={weather.city}/>
     </div>
     </div>
     );
