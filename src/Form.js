@@ -15,7 +15,7 @@ export default function Form() {
           />
         </div>
         <div className="col-3">
-          <input type="submit" value="Search" class="btn btn-primary w-100" />
+          <input type="submit" value="Search" className="btn btn-primary w-100" />
         </div>
         <div className="col-3">
           <button type="button" className="btn btn-success w-100" id="btn-current">

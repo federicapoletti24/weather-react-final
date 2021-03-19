@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import "./Temperature.css";
 import { useState } from "react";
+import FriendlyDate from "./FriendlyDate";
 
 
 export default function Temperature(props) {
@@ -10,6 +11,7 @@ const [weather, setWeather] = useState({});
 function handleResponse(response){
   console.log(response.data);
   setWeather({
+    date: new Date(response.data.dt * 1000),
     temperature:Math.round(response.data.main.temp),
     wind:Math.round(response.data.wind.speed),
     city: response.data.name,
@@ -25,7 +27,9 @@ if (ready) {return (
     <div className="header">
   <h1 id="city">{weather.city}</h1>
       <ul>
-        <li id="date"></li>
+        <li id="date">
+          <FriendlyDate date={weather.date}/>
+        </li>
         <li>
           <span id="description">{weather.description}</span>
         </li>
