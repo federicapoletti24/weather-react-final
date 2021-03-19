@@ -50,6 +50,30 @@ li {
   margin-left: 5px;
   padding: 0;
 }
+.header form {
+  margin-bottom: 15px;
+}
+.btn-primary {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.btn-success {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  background-color: #ec6e4c;
+}
 
 .weather li:first-letter {
   text-transform: capitalize;
