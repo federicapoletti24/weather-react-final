@@ -7,25 +7,7 @@
   height: 70px;
   width: 70px;
 }
-.temperature strong {
-  font-size: 50px;
-  font-weight: 100px;
-  margin-right: 10px;
-}
 
-.temperature .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.units {
-  position: relative;
-  font-size: 18px;
-  top: -20px;
-}
-.link {
-  color: white;
-}
 ul {
   margin: 0;
   padding: 0;
@@ -82,4 +64,14 @@ li {
   list-style: none;
   font-size: 14px;
   font-weight: lighter;
+}
+.weather .unit {
+  position: relative;
+  font-size: 18px;
+  top: -20px;
+}
+.weather .temperature strong {
+  font-size: 48px;
+  font-weight: 100px;
+  margin-right: 10px;
 }
