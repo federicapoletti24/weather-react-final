@@ -1,8 +1,10 @@
 import React from "react";
 import "./Form.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Form() {
   return (
     <form id="search-form">
+      <div className="container">
       <div className="row">
         <div class="col-6">
           <input
@@ -20,6 +22,7 @@ export default function Form() {
             Current
           </button>
         </div>
+      </div>
       </div>
     </form>
   );
