@@ -1,11 +1,11 @@
 .weather-description {
   margin-bottom: 15px;
 }
-.temperature img {
+.temperature canvas {
   float: left;
   margin-right: 15px;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
 }
 
 ul {

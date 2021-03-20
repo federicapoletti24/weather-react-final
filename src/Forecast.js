@@ -1,44 +1,44 @@
 import React, { useState } from "react";
 import "./Forecast.css";
 import axios from "axios";
+import Hours from "./Hours";
 
 export default function Forecast(props) {
 const [loaded, setLoaded] = useState(false);
 const [forecast, setForecast] = useState(null);
 
+
 function handleForecast(response) {
-  
-  setForecast(response.data)
+  setForecast(response.data);
   setLoaded(true);
 }
 if (loaded) {
-  console.log(forecast);
   return (
     <div className="row forecast">
       <div className="col-3">
         <div className="card">
           <div className="card-body">
-08:00
+<Hours data={forecast.list[0]}/>
 <br />
 <img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly_cloudy"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="partly cloudy"
               className="float-left"
               id="icon-thu"
             />
 <br />
-    <span className="forecast-temp">{Math.round(forecast.list[1].main.temp)}°C</span>
+    <span className="forecast-temp">{Math.round(forecast.list[0].main.temp)}°C</span>
     </div>
     </div>
     </div>
     <div className="col-3">
         <div className="card">
           <div className="card-body">
-            12:00
+<Hours data={forecast.list[2]}/>
 <br />
 <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly_cloudy"
+              alt="partly cloudy"
               className="float-left"
               id="icon-thu"
             />
@@ -50,11 +50,11 @@ if (loaded) {
           <div className="col-3">
         <div className="card">
           <div className="card-body">
-            16:00
+<Hours data={forecast.list[4]}/>
 <br />
 <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly_cloudy"
+              alt="partly cloudy"
               className="float-left"
               id="icon-thu"
             />
@@ -66,11 +66,11 @@ if (loaded) {
 <div className="col-3">
         <div className="card">
           <div className="card-body">
-            22:00
+<Hours data={forecast.list[6]}/>
 <br />
 <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly_cloudy"
+              alt="partly cloudy"
               className="float-left"
               id="icon-thu"
             />
