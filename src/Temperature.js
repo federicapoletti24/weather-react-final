@@ -19,7 +19,7 @@ function handleResponse(response){
     city: response.data.name,
     humidity: response.data.main.humidity,
     description: response.data.weather[0].description,
-    iconUrl: response.data.weather[0].icon
+    icon: response.data.weather[0].icon
   })
   setReady(true);
 }

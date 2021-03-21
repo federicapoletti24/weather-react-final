@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Forecast.css";
 import axios from "axios";
 import Hours from "./Hours";
+import WeatherIcon from "./WeatherIcon";
 
 export default function Forecast(props) {
 const [loaded, setLoaded] = useState(false);
@@ -20,12 +21,8 @@ if (loaded) {
           <div className="card-body">
 <Hours data={forecast.list[0]}/>
 <br />
-<img
-            src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly cloudy"
-              className="float-left"
-              id="icon-thu"
-            />
+<WeatherIcon code={forecast.list[0].weather[0].icon}/>
+
 <br />
     <span className="forecast-temp">{Math.round(forecast.list[0].main.temp)}°C</span>
     </div>
@@ -36,12 +33,8 @@ if (loaded) {
           <div className="card-body">
 <Hours data={forecast.list[2]}/>
 <br />
-<img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly cloudy"
-              className="float-left"
-              id="icon-thu"
-            />
+<WeatherIcon code={forecast.list[2].weather[0].icon}/>
+
 <br />
     <span className="forecast-temp">{Math.round(forecast.list[1].main.temp)}°C</span>
     </div>
@@ -52,12 +45,7 @@ if (loaded) {
           <div className="card-body">
 <Hours data={forecast.list[4]}/>
 <br />
-<img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly cloudy"
-              className="float-left"
-              id="icon-thu"
-            />
+<WeatherIcon code={forecast.list[4].weather[0].icon}/>
 <br />
     <span className="forecast-temp">{Math.round(forecast.list[2].main.temp)}°C</span>
     </div>
@@ -68,12 +56,8 @@ if (loaded) {
           <div className="card-body">
 <Hours data={forecast.list[6]}/>
 <br />
-<img
-              src="http://openweathermap.org/img/wn/10d@2x.png"
-              alt="partly cloudy"
-              className="float-left"
-              id="icon-thu"
-            />
+<WeatherIcon code={forecast.list[4].weather[0].icon}/>
+
 <br />
     <span className="forecast-temp">{Math.round(forecast.list[3].main.temp)}°C</span>
     </div>
