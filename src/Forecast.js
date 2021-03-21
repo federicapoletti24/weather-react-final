@@ -36,7 +36,7 @@ if (loaded) {
 <WeatherIcon code={forecast.list[2].weather[0].icon}/>
 
 <br />
-    <span className="forecast-temp">{Math.round(forecast.list[1].main.temp)}°C</span>
+    <span className="forecast-temp">{Math.round(forecast.list[2].main.temp)}°C</span>
     </div>
     </div>
     </div>
@@ -47,7 +47,7 @@ if (loaded) {
 <br />
 <WeatherIcon code={forecast.list[4].weather[0].icon}/>
 <br />
-    <span className="forecast-temp">{Math.round(forecast.list[2].main.temp)}°C</span>
+    <span className="forecast-temp">{Math.round(forecast.list[4].main.temp)}°C</span>
     </div>
     </div>
     </div>
@@ -56,10 +56,10 @@ if (loaded) {
           <div className="card-body">
 <Hours data={forecast.list[6]}/>
 <br />
-<WeatherIcon code={forecast.list[4].weather[0].icon}/>
+<WeatherIcon code={forecast.list[6].weather[0].icon}/>
 
 <br />
-    <span className="forecast-temp">{Math.round(forecast.list[3].main.temp)}°C</span>
+    <span className="forecast-temp">{Math.round(forecast.list[6].main.temp)}°C</span>
     </div>
     </div>
     </div>
