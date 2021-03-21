@@ -69,9 +69,14 @@ li {
   position: relative;
   font-size: 18px;
   top: -20px;
+  color: white;
 }
 .weather .temperature strong {
   font-size: 48px;
   font-weight: 100px;
   margin-right: 10px;
+}
+.link {
+  color: white;
+  text-decoration: underline;
 }
